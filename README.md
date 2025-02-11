@@ -20,9 +20,6 @@
     virtualenv venv
     venv/Scripts/activate
 
-# Go inside the project folder
-
-    cd  untill you see manage.py file 
 
 # Install the necessary modules
 
@@ -35,10 +32,16 @@
 # Run the application
 
 **generate dummy data using below command**
+```
    python manage.py dummy_data 10 
 
+```
+
 **run server using below command**
+```
     python manage.py runserver
+
+```
 
 # Open the below url on your browser
 
@@ -50,5 +53,7 @@
     python manage.py migrate
 
 **run this command to test the app**
+```
      python manage.py test polls
+```
     
