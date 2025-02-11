@@ -53,7 +53,7 @@
     python manage.py migrate
 
 **run this command to test the app**
-```
-     python manage.py test polls
+```python
+python manage.py test polls
 ```
     
