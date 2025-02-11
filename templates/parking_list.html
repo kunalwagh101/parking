@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking Spaces</title>
+</head>
+<body>
+    <h1>Parking Spaces</h1>
+    <ul>
+        {% for space in spaces %}
+            <li>
+                {{ space.number }} - {% if space.is_available %}Available{% else %}Occupied{% endif %}
+                {% if space.is_available %}
+                    <a href="{% url 'book_parking' space.id %}">Book</a>
+                {% else %}
+            
+
+                    <a href="{% url 'release_parking' space.id %}">Release</a>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
