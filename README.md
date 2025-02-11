@@ -38,6 +38,9 @@
 ```
 
 **run server using below command**
+
+
+
 ```
     python manage.py runserver
 
@@ -53,6 +56,8 @@
     python manage.py migrate
 
 **run this command to test the app**
+
+
 ```python
 python manage.py test polls
 ```
